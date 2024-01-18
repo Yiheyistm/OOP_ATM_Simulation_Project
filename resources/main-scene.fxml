@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="mainPane" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="691.0" style="-fx-background-color: #323b43;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abeto.javafx.MainController">
+   <children>
+      <CubicCurve controlX1="-923.3084716796875" controlX2="-358.91558837890625" controlY1="174.0209503173828" controlY2="155.08778381347656" endX="-77.39781188964844" endY="-38.78504180908203" fill="#1fcbff68" startX="-727.947021484375" startY="-35.188720703125" stroke="BLACK" />
+      <Label fx:id="visionATM" alignment="TOP_CENTER" prefHeight="79.0" prefWidth="691.0" text="Wellcome To Vision ATM">
+         <font>
+            <Font name="Forte" size="54.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.03409093076532543">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.2150000035762787" blue="0.7060621380805969" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8015421628952026" green="0.8899999856948853" blue="0.09790000319480896" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="loginAdmin" mnemonicParsing="false" onAction="#adminLogin" prefHeight="47.0" prefWidth="270.0" style="-fx-border-radius: 10; -fx-background-color: white;" text=" Login As Admin" textFill="#21b190" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="100.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="userLogin" mnemonicParsing="false" onAction="#userLogin" prefHeight="47.0" prefWidth="271.0" style="-fx-background-color: white; -fx-blend-mode: none; -fx-border-radius: 60px;" text="  Login As User" textFill="#21b190">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <effect>
+      <Glow level="0.17" />
+   </effect>
+   <opaqueInsets>
+      <Insets top="20.0" />
+   </opaqueInsets>
+</VBox>
