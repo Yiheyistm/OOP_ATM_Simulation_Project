@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#goBack" prefHeight="554.0" prefWidth="671.0" style="-fx-background-color: #323b43;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abeto.javafx.UserController">
+   <children>
+      <TextField fx:id="withdrawField" layoutX="193.0" layoutY="257.0" prefHeight="38.0" prefWidth="302.0" promptText="💵💰 Enter Your Money">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="49.0" layoutY="190.0" prefHeight="35.0" prefWidth="530.0" text="What amount of money do you want Withdraw" textFill="#fafaf6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="484.0" onMouseClicked="#goBack" text="&lt;&lt;  Back" textFill="#c9cfca">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="fieldStatus" alignment="CENTER" layoutX="115.0" layoutY="298.0" prefHeight="35.0" prefWidth="494.0" textFill="#e7e0e0">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="234.0" layoutY="369.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="41.0" prefWidth="216.0" style="-fx-background-color: #0675f4;" text="WITHDRAW" textFill="#f2f6fa">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
