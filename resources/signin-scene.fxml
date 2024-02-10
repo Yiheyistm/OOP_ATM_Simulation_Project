@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="676.0" style="-fx-background-color: #323b43;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abeto.javafx.MainController">
+   <children>
+      <Button fx:id="SignIn" layoutX="291.0" layoutY="400.0" mnemonicParsing="false" onAction="#signIn" prefHeight="46.0" prefWidth="234.0" style="-fx-background-color: white;" text="Sign In">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5797422528266907" green="0.7300000190734863" blue="0.10220000147819519" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7799999713897705" green="0.16380000114440918" blue="0.369147926568985" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Bell MT Bold" size="31.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="userPassword" layoutX="326.0" layoutY="271.0" prefHeight="42.0" prefWidth="234.0" promptText="*******">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </PasswordField>
+      <Label alignment="CENTER" layoutX="135.0" layoutY="194.0" prefHeight="42.0" prefWidth="178.0" text="UserName:" textFill="#f4f1f1">
+         <font>
+            <Font name="Lucida Bright Demibold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" layoutX="326.0" layoutY="194.0" prefHeight="41.0" prefWidth="234.0" promptText="username@gmil.com">
+         <font>
+            <Font name="Lucida Fax Regular" size="21.0" />
+         </font>
+      </TextField>
+      <CubicCurve controlX1="-436.79998779296875" controlX2="-291.20001220703125" controlY1="-99.80001831054688" controlY2="-200.0" endX="150.0" fill="#ffa91f" layoutX="371.0" layoutY="552.0" startX="-150.0" stroke="BLACK" />
+      <Label alignment="CENTER" layoutX="135.0" layoutY="271.0" prefHeight="42.0" prefWidth="178.0" text="Password:" textFill="#f4f1f1">
+         <font>
+            <Font name="Lucida Bright Demibold" size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="51.0" prefHeight="87.0" prefWidth="676.0" text="Sign In" textFill="#f4f1f1">
+         <font>
+            <Font name="Bell MT Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label fx:id="fieldStatus" alignment="CENTER" layoutX="64.0" layoutY="325.0" prefHeight="30.0" prefWidth="609.0" textFill="#f70707">
+         <font>
+            <Font name="Lucida Handwriting Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="509.0" onMouseClicked="#goBack" text="&lt;&lt;  Back" textFill="#c9cfca">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Circle fill="#f6ff1f" layoutX="35.0" layoutY="51.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

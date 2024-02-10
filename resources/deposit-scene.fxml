@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#goBack" prefHeight="554.0" prefWidth="671.0" style="-fx-background-color: #323b43;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abeto.javafx.UserController">
+   <children>
+      <TextField fx:id="depositField" layoutX="193.0" layoutY="257.0" prefHeight="38.0" prefWidth="302.0" promptText="💵💰 Enter Your Money">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="85.0" layoutY="190.0" prefHeight="35.0" prefWidth="494.0" text="What amount of money do you want deposit" textFill="#e7e0e0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="210.0" layoutY="418.0" mnemonicParsing="false" onAction="#deposit" prefHeight="40.0" prefWidth="243.0" style="-fx-background-color: #0675f4;" text="DEPOSIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="32.0" layoutY="484.0" onMouseClicked="#goBack" text="&lt;&lt;  Back" textFill="#c9cfca">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="fieldStatus" alignment="CENTER" layoutX="88.0" layoutY="298.0" prefHeight="35.0" prefWidth="494.0" textFill="#e7e0e0">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
